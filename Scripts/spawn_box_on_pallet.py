@@ -53,15 +53,8 @@ def spawn_obj(static_mesh_obj, spawn_location, spawn_rotation):
     )
 
 
-def spawn_boxes_on_pallet(pallet_obj, box_objs,
-                          start_i=0, i_distance_multiplier=100):
-    from .get_area_obj_list import get_area_obj_list, Box, plot_area_in_grid
-
-    pallet_spawn_location = unreal.Vector(
-        start_i * i_distance_multiplier, 0, 0)
-    pallet_spawn_rotation = unreal.Rotator(0, 0, 0)
-    spawn_obj(pallet_obj["static_mesh_obj"],
-              pallet_spawn_location, pallet_spawn_rotation)
+def spawn_boxes(box_objs, area, origin_x, origin_y, origin_z):
+    from .get_area_obj_list import get_area_obj_list, Box
 
     box_obj_list = []
     for box_obj in box_objs:
@@ -73,36 +66,37 @@ def spawn_boxes_on_pallet(pallet_obj, box_objs,
             box_obj['height'],
             is_rotated=False
         ))
-        # box_obj_list.append(Box(
-        #     box_obj['static_mesh_obj'],
-        #     box_obj['asset_name'],
-        #     box_obj['length'],
-        #     box_obj['width'],
-        #     box_obj['height'],
-        #     is_rotated=True
-        # ))
 
     area_obj_list = get_area_obj_list(
-        (pallet_obj['width'], pallet_obj['length']),
-        pallet_obj['height'],
+        area,
         box_obj_list,
         is_with_margin=True,
-        start_i=start_i,
-        i_distance_multiplier=i_distance_multiplier
+
+        origin_x=origin_x,
+        origin_y=origin_y,
+        origin_z=origin_z,
     )
 
     for each in area_obj_list:
-        print(
-            f"Start spawning, {each.box_obj.asset_name} at {each.x1}, {each.y1}, {each.z1}")
         spawn_obj(each.box_obj.static_mesh_obj,
                   unreal.Vector(each.x1, each.y1, each.z1),
                   unreal.Rotator(0, 0, 0))
 
-    # plot_area_in_grid(
-    #     area_obj_list, (pallet_obj['length'], pallet_obj['width']))
+
+def spawn_pallet(pallet_obj, box_objs,
+                 origin_x, origin_y, origin_z):
+
+    pallet_spawn_location = unreal.Vector(
+        origin_x, origin_y, origin_z)
+    pallet_spawn_rotation = unreal.Rotator(0, 0, 0)
+    spawn_obj(pallet_obj["static_mesh_obj"],
+              pallet_spawn_location, pallet_spawn_rotation)
+
+    spawn_boxes(box_objs, (pallet_obj["width"], pallet_obj["length"]),
+                origin_x, origin_y, origin_z + pallet_obj["height"])
 
 
-def spawn(n=1):
+if __name__ == "__main__":
     objecs_map = get_objects_map(asset_path="/Game/Assets")
     pallet_obj = None
     box_objs = []
@@ -112,8 +106,7 @@ def spawn(n=1):
             pallet_obj = obj
         elif "Box" in obj_name:
             box_objs.append(obj)
+    n = 5
     for i in range(n):
-        spawn_boxes_on_pallet(pallet_obj, box_objs, i, 200)
-
-
-spawn(n=5)
+        spawn_pallet(pallet_obj, box_objs,
+                     i * 200, 0, 0)

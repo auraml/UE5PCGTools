@@ -57,9 +57,9 @@ def get_all_biggest_empty_rectangles_from_grid(grid):
     return empty_rectangles
 
 
-def get_area_obj_list(total_area, initial_height, box_obj_list,
+def get_area_obj_list(total_area, box_obj_list,
                       is_with_margin=True,
-                      start_i=0, i_distance_multiplier=100):
+                      origin_x=0, origin_y=0, origin_z=0):
     # create empty grid filled with 0 of size total_area
     grid = [[0 for _ in range(total_area[0])] for _ in range(total_area[1])]
 
@@ -99,16 +99,13 @@ def get_area_obj_list(total_area, initial_height, box_obj_list,
                         picked_y2 = picked_y1 + picked_box_obj.width
 
                     area_obj_list.append(PickedVolume(
-                        (start_i * i_distance_multiplier) +
-                        picked_x1, picked_y1, initial_height,
-
-                        (start_i * i_distance_multiplier) +
-                        picked_x2, picked_y2, initial_height + picked_box_obj.height,
-
+                        (origin_x) + picked_x1,
+                        (origin_y) + picked_y1,
+                        (origin_z),
+                        (origin_x) + picked_x2,
+                        (origin_y) + picked_y2,
+                        (origin_z) + picked_box_obj.height,
                         picked_box_obj))
-
-                    print(
-                        f"Area {picked_box_obj.asset_name} fits at ({picked_x1}, {picked_y1}), ({picked_x2}, {picked_y2})")
 
                     for i in range(picked_x1, picked_x2):
                         for j in range(picked_y1, picked_y2):
@@ -116,12 +113,12 @@ def get_area_obj_list(total_area, initial_height, box_obj_list,
                     break
         max_tries -= 1
 
-    # print area_obj_list
-    print("\nArea objects: ")
-    for each in area_obj_list:
-        print(each.x1, each.y1, each.z1,
-              each.x2, each.y2, each.z2,
-              each.box_obj.asset_name)
+    # # print area_obj_list
+    # print("\nArea objects: ")
+    # for each in area_obj_list:
+    #     print(each.x1, each.y1, each.z1,
+    #           each.x2, each.y2, each.z2,
+    #           each.box_obj.asset_name)
 
     return area_obj_list
 
@@ -162,8 +159,11 @@ if __name__ == "__main__":
     # Total 2D area
     pallet_dims = [100, 100, 20]
     total_area = [pallet_dims[0], pallet_dims[1]]
-    initial_height = pallet_dims[2]
+    initial_height = pallet_dims[2]  # pallet height
 
     area_obj_list = get_area_obj_list(
-        total_area, initial_height, box_obj_list, True, 0, 100)
+        total_area,
+        box_obj_list,
+        True,
+        0, 0, initial_height)
     plot_area_in_grid(area_obj_list, total_area)
