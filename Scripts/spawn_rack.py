@@ -2,6 +2,7 @@ import unreal
 
 from .spawn_pallet import spawn_pallet
 from .utils import get_objects_map, spawn_obj
+from .get_area_obj_list import Box
 
 
 def build_rack(config_json, origin_x, origin_y, origin_z=0):
@@ -18,6 +19,20 @@ def build_rack(config_json, origin_x, origin_y, origin_z=0):
     rack_tray_sm = rack_tray_obj["static_mesh_obj"]
     rack_tray_length = rack_tray_obj["length"]
     rack_tray_height = rack_tray_obj["height"]
+
+    # build box objects list
+    if "pallet" in rack["tray"]:
+        box_objs = pallet["box_objs"]
+        box_obj_list = []
+        for box_obj in box_objs:
+            box_obj_list.append(Box(
+                box_obj['static_mesh_obj'],
+                box_obj['asset_name'],
+                box_obj['length'],
+                box_obj['width'],
+                box_obj['height'],
+                is_rotated=False
+            ))
 
     for column_index in range(rack_columns):
         for row_index in range(rack_rows):
@@ -64,11 +79,10 @@ def build_rack(config_json, origin_x, origin_y, origin_z=0):
             if "pallet" in rack["tray"]:
                 pallet = rack["tray"]["pallet"]
                 pallet_obj = pallet["obj"]
-                box_objs = pallet["box_objs"]
                 pallet_offset = pallet["offset"]
 
                 spawn_pallet(
-                    pallet_obj, box_objs,
+                    pallet_obj, box_obj_list,
 
                     (origin_x + (column_index * rack_tray_length) +
                      pallet_offset["x"]),
@@ -79,7 +93,7 @@ def build_rack(config_json, origin_x, origin_y, origin_z=0):
                 )
 
                 spawn_pallet(
-                    pallet_obj, box_objs,
+                    pallet_obj, box_obj_list,
 
                     (origin_x + (column_index * rack_tray_length) +
                      pallet_offset["x"]*2 + pallet_obj["length"]),

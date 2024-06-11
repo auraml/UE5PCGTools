@@ -3,19 +3,7 @@ from .utils import spawn_obj
 from .get_area_obj_list import get_area_obj_list, Box
 
 
-def spawn_boxes(box_objs, area, origin_x, origin_y, origin_z):
-
-    box_obj_list = []
-    for box_obj in box_objs:
-        box_obj_list.append(Box(
-            box_obj['static_mesh_obj'],
-            box_obj['asset_name'],
-            box_obj['length'],
-            box_obj['width'],
-            box_obj['height'],
-            is_rotated=False
-        ))
-
+def spawn_boxes(box_obj_list, area, origin_x, origin_y, origin_z):
     area_obj_list = get_area_obj_list(
         area,
         box_obj_list,
