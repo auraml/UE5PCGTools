@@ -22,6 +22,7 @@ def build_rack(config_json, origin_x, origin_y, origin_z=0):
 
     # build box objects list
     if "pallet" in rack["tray"]:
+        pallet = rack["tray"]["pallet"]
         box_objs = pallet["box_objs"]
         box_obj_list = []
         for box_obj in box_objs:
@@ -77,7 +78,6 @@ def build_rack(config_json, origin_x, origin_y, origin_z=0):
 
             # spawn pallets
             if "pallet" in rack["tray"]:
-                pallet = rack["tray"]["pallet"]
                 pallet_obj = pallet["obj"]
                 pallet_offset = pallet["offset"]
 
