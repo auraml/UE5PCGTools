@@ -40,8 +40,10 @@ def get_objects_map(asset_path="/Game/Assets"):
         all_assets_loaded, unreal.StaticMesh)
 
     for static_mesh in static_mesh_assets:
-        objects_map[static_mesh.get_name()] = get_mesh_obj(static_mesh)
-    # print(objects_map)
+        # filter by SM name
+        name = static_mesh.get_name()
+        if "Rack" in name or "Pallet" in name or "Box" in name:
+            objects_map[static_mesh.get_name()] = get_mesh_obj(static_mesh)
     return objects_map
 
 

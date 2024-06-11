@@ -49,11 +49,12 @@ def generate_input_config_json(index=0):
     }
 
     # json dump with indent
-    config_json = json.dumps(config_json, indent=2)
+    config_json_dump = json.dumps(config_json, indent=2)
 
     # write to json file
-    with open(f"Scripts\\dataset\\output\\input\\{index}.json", "w") as f:
-        f.write(config_json)
+    with open(f"D:\\UnrealProjects\\PCGTools\\Scripts\\dataset\\output\\input\\{index}.json", "w") as f:
+        f.write(config_json_dump)
+    return config_json
 
 
 if __name__ == "__main__":
