@@ -1,0 +1,19 @@
+Create a rack cluster system with the following detailed specifications:
+
+- **Cluster Configuration**:
+  - The cluster should have **1 row** and **4 columns** of rack units.
+  - The distance between each row of racks should be **411 units**.
+  - The distance between each column of racks should be **383 units**.
+
+- **Rack Structure**:
+  - Each rack within the cluster should contain **2 rows** and **3 columns** of trays.
+  - The trays should be designed to hold pallets.
+
+- **Tray and Pallet Details**:
+  - Each tray should accommodate a pallet with an offset.
+  - The pallet's offset values are:
+    - **X-offset**: 19 units
+    - **Y-offset**: 0 units
+    - **Z-offset**: 11 units
+
+The layout should be visually represented, adhering strictly to these dimensional specifications and offsets, ensuring precise spacing and alignment as described. The design should be optimized for ease of access and efficiency in storage or retrieval operations within the cluster.

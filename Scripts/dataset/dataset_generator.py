@@ -8,6 +8,6 @@ if __name__ == "__main__":
     for i in range(3):
         clear_level()
         config_json = generate_input_config_json(i)
-        config_json = add_objects_to_json(config_json)
-        spawn_rack_cluster(config_json)
+        config_json_with_objs = add_objects_to_json(config_json)
+        spawn_rack_cluster(config_json_with_objs)
         generate_output_json(i)

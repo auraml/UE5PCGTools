@@ -1,7 +1,7 @@
 {
   "cluster": {
-    "rows": 1,
-    "columns": 1,
+    "rows": 2,
+    "columns": 3,
     "distance": {
       "rows": 362,
       "columns": 184

@@ -106,5 +106,5 @@ def clear_level():
 
 if __name__ == "__main__":
     # print(get_objects_map(asset_path="/Game/Assets"))
-    # clear_level()
+    clear_level()
     ...

@@ -1,3 +1,111 @@
+You are an expert 3D engineer.
+Given the description to generate a racks cluster system, you have to understand what kind of 3D environment user wants to build and then generate a JSON file which will contain the x, y, z coordinates of different objects which will be required to build the racks cluster.
+
+Racks cluster has 5 components:
+1. Cluster: It is made of multiple racks placed in rows and coloumns.
+2. Rack: A single rack is made using Rack Frame and Rack Tray based on rack rows and columns
+3. Tray: On each tray of a rack, we place pallets.
+4. Pallet: On top of each pallet, we place boxes.
+5. Box: Boxes are kept on top of a pallet in randomised order.
+
+
+Following is the objects map in JSON format which contains name of different 3D assets available with their dimensions (length, width, height) to build the racks cluster:
+{
+  "SM_Box_2": {
+    "id": 0,
+    "dimensions": [
+      42,
+      90,
+      50
+    ]
+  },
+  "SM_Box_3": {
+    "id": 1,
+    "dimensions": [
+      20,
+      40,
+      20
+    ]
+  },
+  "SM_Box_4": {
+    "id": 2,
+    "dimensions": [
+      20,
+      20,
+      20
+    ]
+  },
+  "SM_Box_5": {
+    "id": 3,
+    "dimensions": [
+      40,
+      40,
+      40
+    ]
+  },
+  "SM_Box_6": {
+    "id": 4,
+    "dimensions": [
+      40,
+      40,
+      20
+    ]
+  },
+  "SM_Box_7": {
+    "id": 5,
+    "dimensions": [
+      40,
+      80,
+      20
+    ]
+  },
+  "SM_Box_8": {
+    "id": 6,
+    "dimensions": [
+      42,
+      90,
+      30
+    ]
+  },
+  "SM_Pallet": {
+    "id": 7,
+    "dimensions": [
+      121,
+      101,
+      12
+    ]
+  },
+  "SM_Rack_Frame": {
+    "id": 8,
+    "dimensions": [
+      10,
+      100,
+      128
+    ]
+  },
+  "SM_Rack_Tray": {
+    "id": 9,
+    "dimensions": [
+      288,
+      100,
+      16
+    ]
+  }
+}
+
+You answer by only generating a JSON file that contains name of the 3D Asset as the key and value as the list of locataions (x, y, z) indicating where that 3D asset will be spawned in the 3D environment.
+
+Example Input:
+Please generate a racks cluster system with the following detailed specifications:
+The cluster system consists of 2 rows and 3 columns. The distance between the rows is 217 units, and the distance between the columns is 328 units.
+Each rack within the cluster contains 1 row and 3 columns. 
+Additionally, each tray within the rack has a pallet with an offset specified as follows:
+- x-axis offset: 14 units
+- y-axis offset: 0 units
+- z-axis offset: 11 units
+Please ensure these properties are accurately reflected in the generated racks cluster system."
+
+Example Output:
 {
   "SM_Rack_Frame": [
     [0, 0, 0],
@@ -325,3 +433,11 @@
     [3180, 323, 23]
   ]
 }
+
+
+New Input:
+Please generate a textual description for a racks cluster system with the following specific properties:
+The cluster consists of 1 row and 4 columns. The distance between each row in the cluster is 411 units, while the distance between each column is 383 units.
+Each rack within the cluster has 2 rows and 3 columns. Within each rack, there are trays designed to hold pallets. Each pallet on a tray has an offset, with an x-axis offset of 19 units, no offset on the y-axis, and a z-axis offset of 11 units.
+
+Now generate json file output for this.
