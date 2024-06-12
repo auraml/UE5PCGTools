@@ -1,0 +1,1 @@
+Build a 3D racks system that includes a cluster of rows and columns. The cluster consists of multiple racks constructed in rows and columns with specific distances. Each rack is designed with a certain number of rows and columns, where trays with pallets are positioned at specified offsets. Ensure the pallets are correctly placed on the trays within the cluster of racks.

@@ -1,0 +1,5 @@
+Create a 3D racks cluster system with the following specifications:
+- Cluster comprising 1 row and 3 columns of racks.
+- Racks arranged with a distance of 409 units between rows and 386 units between columns.
+- Each rack consists of 1 row and 4 columns of trays.
+- Trays positioned with a pallet offset of x: 15, y: 0, z: 11 units.

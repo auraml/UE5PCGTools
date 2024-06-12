@@ -21,7 +21,7 @@ def generate_output_json(index=0):
                 int(location.x), int(location.y), int(location.z)]]
 
     # json dump with indent
-    output_json_dump = json.dumps(output_json, indent=2)
+    output_json_dump = json.dumps(output_json)
 
     # write to json file
     with open(f"D:\\UnrealProjects\\PCGTools\\Scripts\\dataset\\output\\output\\{index}.json", "w") as f:

@@ -1,0 +1,1 @@
+Create a clustered system with 4 rows and 4 columns of racks. Each rack has 3 columns and 1 row of trays. The pallets on the trays have an offset of x: 14, y: 0, z: 11. Make sure to space the rows by 206 units and the columns by 49 units for an organized layout. Let's bring this 3D racks cluster system to life!

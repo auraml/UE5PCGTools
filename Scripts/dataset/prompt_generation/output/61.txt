@@ -1,0 +1,4 @@
+Create a 3D racks cluster system with the following details:
+- Cluster with 4 rows and 4 columns, spaced at 156 units horizontally and 302 units vertically.
+- Each rack has 2 rows and 2 columns.
+- Trays within racks have pallets positioned with an offset of x: 11, y: 0, z: 11 units.
