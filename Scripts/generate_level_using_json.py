@@ -1,5 +1,5 @@
 import json
-from ..utils import spawn_obj, get_objects_map, clear_level
+from .utils import spawn_obj, get_objects_map, clear_level
 import unreal
 
 objecs_map = get_objects_map(asset_path="/Game/Assets")
@@ -15,7 +15,7 @@ def get_object_from_sm_name(sm_name):
 if __name__ == "__main__":
     clear_level()
 
-    with open("D:\\UnrealProjects\\PCGTools\\Scripts\\dataset\\prompt\\samples\\gpt3_output.json", "r") as f:
+    with open("D:\\UnrealProjects\\PCGTools\\Scripts\\dataset\\llama3_output.json", "r") as f:
         output_json = json.load(f)
 
         for sm_name in output_json:

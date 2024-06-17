@@ -1,0 +1,23 @@
+{
+  "cluster": {
+    "rows": 1,
+    "columns": 3,
+    "distance": {
+      "rows": 204,
+      "columns": 436
+    },
+    "rack": {
+      "rows": 3,
+      "columns": 5,
+      "tray": {
+        "pallet": {
+          "offset": {
+            "x": 11,
+            "y": 0,
+            "z": 11
+          }
+        }
+      }
+    }
+  }
+}
