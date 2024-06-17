@@ -1,0 +1,1 @@
+Create a clusters system of 4 rows and 1 column. The racks are structured with 3 rows and 2 columns. Inside each rack tray, the pallet is positioned with an offset of x: 19, y: 0, z: 11. Ensure spacing between rows is 498 and columns is 370.

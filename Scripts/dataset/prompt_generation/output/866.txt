@@ -1,0 +1,1 @@
+Construct a cluster system with 1 row and 2 columns of racks. Each rack consists of 1 row and 2 columns of trays. The pallet within each tray has an offset of x: 20, y: 0, z: 11. Ensure a distance of 469 units between rows and 465 units between columns for a well-organized layout. Start by building this detailed racks cluster system according to the provided specifications.

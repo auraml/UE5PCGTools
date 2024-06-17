@@ -1,0 +1,1 @@
+Construct a cluster system with 4 rows and 5 columns of racks. Each rack has 1 row and 4 columns of trays. Place pallets on trays with an offset of x: 15, y: 0, z: 11. Rows are spaced 166 units apart while columns are spaced 271 units apart. Let's create a 3D model based on these specifications.

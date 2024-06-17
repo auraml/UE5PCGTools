@@ -1,0 +1,4 @@
+Build a 3D racks system with the following specifications: 
+- The cluster contains 5 rows and 1 column of racks spaced 155 units apart in rows and 274 units apart in columns. 
+- Each rack consists of 2 rows and 5 columns of trays. 
+- The pallets in each tray have an offset of 18 units along the x-axis, 0 units along the y-axis, and 11 units along the z-axis.

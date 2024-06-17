@@ -1,0 +1,1 @@
+Construct a 3D racks cluster system with a single row and two columns. The racks are organized with a row separation of 325 units and a column separation of 257 units. Each rack consists of two rows and one column. Inside each rack, trays are positioned with pallets located at an offset of x: 17, y: 0, z: 11. Start by building this configuration in the 3D space.

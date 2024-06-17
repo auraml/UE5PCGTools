@@ -1,0 +1,1 @@
+Create a 3D racks cluster system with a total of 5 rows and 5 columns. The racks are arranged in a grid pattern with specific spacing between rows and columns. Each rack consists of 2 rows and 3 columns, with trays designed to hold pallets. Position the pallets on the trays with an offset of 13 along the x-axis, 0 along the y-axis, and 11 along the z-axis.

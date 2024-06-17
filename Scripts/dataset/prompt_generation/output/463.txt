@@ -1,0 +1,1 @@
+Construct a cluster system with one row and three columns of racks, with specific distances between them. Each rack consists of four rows and one column, where trays with pallets are placed with particular offsets in the X, Y, and Z directions.

@@ -1,0 +1,1 @@
+Create a 3D racks cluster system with 3 rows and 1 column. Arrange multiple racks in a layout with 4 rows and 3 columns. Place trays inside the rack where pallets will be positioned. Adjust the pallet position with an offset of x: 20, y: 0, z: 11 for optimal storage.

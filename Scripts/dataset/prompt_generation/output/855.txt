@@ -1,0 +1,1 @@
+Construct a 3D racks system using the provided JSON data. The cluster consists of one row with five columns. Each rack, with 3 rows and 5 columns, contains trays for pallets. The pallets are positioned with an offset of x=12, y=0, z=11 on the trays within the rack. Consider the distances between rows (349) and columns (473) within the cluster when arranging the racks.

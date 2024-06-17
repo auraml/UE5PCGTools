@@ -1,0 +1,1 @@
+Create a 3D racks system with a clustered layout. The cluster consists of 4 rows and 3 columns of racks, each spaced at 402 units horizontally and 135 units vertically. Within each rack, there are 5 rows and 4 columns of trays where pallets are placed. The pallets have an offset of 12 units along the x-axis and 11 units along the z-axis.

@@ -1,0 +1,4 @@
+Create a 3D racks cluster system with the following properties:
+- Cluster consists of 1 row and 4 columns of racks.
+- Racks are organized in 2 rows and 5 columns within the cluster.
+- Each pallet tray within a rack has an offset of x: 10, y: 0, z: 11 for positioning.

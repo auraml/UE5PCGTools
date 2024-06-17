@@ -1,0 +1,1 @@
+Build a 3D racks system with a single cluster consisting of 1 row and 1 column. The racks are arranged in a grid with 4 rows and 1 column. Each tray in the rack features a pallet positioned with an offset of 18 units along the x-axis, 0 units along the y-axis, and 11 units along the z-axis.

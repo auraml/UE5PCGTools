@@ -1,0 +1,1 @@
+Create a 3D racks system with a cluster consisting of 3 rows and 2 columns. Each rack in the cluster has 2 rows and 1 column. The trays inside the rack are designed to hold pallets with a specific offset of x: 17, y: 0, z: 11 for precise positioning.

@@ -1,0 +1,1 @@
+Construct a 3D racks cluster system with a cluster layout of 2 rows and 4 columns. The racks within the cluster are organized in rows and columns with specific distances between them. Each rack comprises 2 rows and 3 columns, with trays positioned at predefined offsets including x, y, and z values for pallet placement.

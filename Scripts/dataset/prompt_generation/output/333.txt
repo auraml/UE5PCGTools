@@ -1,0 +1,1 @@
+Create a 3D racks system with one row and one column in the cluster, where racks are organized in a grid layout according to specified distances. Each rack comprises 5 rows and 1 column of trays, with pallets positioned at specific offsets along the x, y, and z axes within the trays.

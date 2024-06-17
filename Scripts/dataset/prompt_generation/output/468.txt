@@ -1,0 +1,1 @@
+Create a racks system with a cluster consisting of 1 row and 4 columns. Each rack within the cluster has 1 row and 1 column. The trays in the rack are designed to hold pallets positioned with an offset of x: 18, y: 0, z: 11. Consider the spacing between rows (355) and columns (413) for an optimal layout.

@@ -1,0 +1,1 @@
+Create a racks system with a cluster containing 4 rows and 4 columns. The distance between rows is 125 units and between columns is 310 units. The rack consists of 1 row and 4 columns, with trays positioned on pallets having an offset of 11 units along the x-axis and z-axis. Build the system accordingly.

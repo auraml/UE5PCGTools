@@ -1,0 +1,1 @@
+Create a 3D racks cluster system with a single row of four columns. The rack setup consists of 4 rows, each with 2 columns. The pallet trays within the racks have an offset positioning of x: 15, y: 0, z: 11 for pallet placement. Each row and column has spacing of 296 units and 192 units respectively. Start designing the racks system based on these specifications.

@@ -1,0 +1,1 @@
+Create a 3D racks system with a single rack in a cluster. The rack consists of 5 tray columns with pallets positioned at an offset of x: 17, y: 0, z: 11. The cluster configuration includes rows: 1 and columns: 1, with distances between rows of 205 and columns of 358.

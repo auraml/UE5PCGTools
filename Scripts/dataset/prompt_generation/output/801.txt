@@ -1,0 +1,1 @@
+Create a 3D racks cluster system with 4 rows and 5 columns of racks. Each rack consists of 2 rows and 4 columns of trays for pallets. The pallet trays have an offset of 15 in the x-direction, 0 in the y-direction, and 11 in the z-direction. The spacing between rows is 431 units and between columns is 19 units. Start building the cluster system by arranging the racks accordingly.

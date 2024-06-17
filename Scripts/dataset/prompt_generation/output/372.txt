@@ -1,0 +1,1 @@
+Create a 3D racks cluster system with a singular cluster configuration. The cluster consists of one row and one column of racks, with a distance of 125 units between rows and 29 units between columns. Each rack within the cluster is designed with one row and two columns for trays. The trays contain pallets located at an offset position of x: 19, y: 0, z: 11.

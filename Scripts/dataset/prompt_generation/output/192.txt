@@ -1,0 +1,1 @@
+Create a 3D racks cluster system with multiple rows and columns in the cluster. Each rack within the cluster is designed with specific rows and columns. The trays in the rack are configured to hold pallets at a certain offset position in the 3D space.

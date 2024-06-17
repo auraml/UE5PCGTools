@@ -1,0 +1,7 @@
+Create a 3D racks cluster system with the following specifications: 
+
+- Cluster composed of 5 rows and 3 columns.
+- Racks arranged in a grid of 5 rows and 4 columns within the cluster.
+- Each pallet on a tray has an offset position of x: 15, y: 0, z: 11.
+
+Proceed with modeling the cluster, racks, trays, pallets, and boxes according to these dimensions and configurations.

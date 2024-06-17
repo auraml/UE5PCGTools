@@ -1,0 +1,1 @@
+Construct a cluster system with one row and five columns of racks. Each rack consists of 5 rows and 3 columns of trays. Pallets on the trays have an offset of 17 units in the x-direction, 0 units in the y-direction, and 11 units in the z-direction. The spacing between rows is 241 units and between columns is 337 units.

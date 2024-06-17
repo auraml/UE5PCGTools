@@ -1,0 +1,1 @@
+Construct a cluster system with 1 row and 2 columns of racks. Each rack contains 5 rows and 4 columns of trays for pallets. The trays have a pallet offset of x: 16, y: 0, z: 11.

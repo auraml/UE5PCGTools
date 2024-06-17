@@ -1,0 +1,1 @@
+Create a cluster system with a single row and column. The racks are organized in a 3x5 grid within the cluster. Each tray within the rack has a pallet positioned with an offset of x: 12, y: 0, z: 11. This setup defines the positioning of the pallets within the trays in the 3D racks system.

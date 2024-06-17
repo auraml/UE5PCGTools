@@ -1,0 +1,1 @@
+Create a 3D racks cluster system with 4 rows and 3 columns of racks. Each rack consists of 2 rows and 3 columns of trays. The pallet offset within each tray is x: 13, y: 0, z: 11. Ensure to arrange the pallets and boxes accordingly on the trays to simulate a realistic distribution in the cluster.

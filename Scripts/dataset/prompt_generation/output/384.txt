@@ -1,0 +1,1 @@
+Create a 3D racks cluster system with 3 rows and 1 column at specified distances. Within the cluster, design racks with 3 rows and 2 columns. Each tray within a rack should have pallets offset by 12 units on the x-axis and 11 units on the z-axis. Start building this intricate system now!

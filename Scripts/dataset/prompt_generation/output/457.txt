@@ -1,0 +1,1 @@
+Create a cluster system with a single row and column. The racks within the cluster are arranged in 4 rows and 3 columns. Each tray within the rack has a pallet positioned with an offset of x: 11, y: 0, z: 11. Consider the distance between rows to be 281 and between columns to be 262.

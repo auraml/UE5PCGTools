@@ -1,0 +1,1 @@
+Create a compact 3D racks cluster system with one row and four columns. Each rack consists of 5 rows and 4 columns. The pallets on trays have an offset of x: 10, y: 0, z: 11.

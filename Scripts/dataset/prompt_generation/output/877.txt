@@ -1,0 +1,1 @@
+Create a 3D racks system with a cluster containing 3 rows of racks. Each rack has 4 columns and is spaced at 152 units apart horizontally and 106 units vertically. Within each rack, position trays with pallets offset by x: 18, y: 0, z: 11 units. Build a realistic representation of this racks cluster system in 3D.
