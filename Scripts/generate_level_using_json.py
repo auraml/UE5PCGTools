@@ -15,7 +15,11 @@ def get_object_from_sm_name(sm_name):
 if __name__ == "__main__":
     clear_level()
 
-    with open("D:\\UnrealProjects\\PCGTools\\Scripts\\dataset\\llama3_output.json", "r") as f:
+    # with open("D:\\UnrealProjects\\PCGTools\\Scripts\\dataset\\llama3_output.json", "r") as f:
+    # with open("D:\\UnrealProjects\\PCGTools\\Scripts\\dataset\\llama3_output_2.json", "r") as f:
+    # with open("D:\\UnrealProjects\\PCGTools\\Scripts\\dataset\\llama3_output_3.json", "r") as f:
+    # with open("D:\\UnrealProjects\\PCGTools\\Scripts\\dataset\\llama3_output_4.json", "r") as f:
+    with open("D:\\UnrealProjects\\PCGTools\\Scripts\\dataset\\llama3_output_5.json", "r") as f:
         output_json = json.load(f)
 
         for sm_name in output_json:
